@@ -26,3 +26,7 @@
 # AoEiuV020
 /temp-clone-apk
 /tag
+
+*.jks
+*.keystore
+keystore.properties
