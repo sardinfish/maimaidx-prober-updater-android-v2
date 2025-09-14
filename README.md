@@ -1,9 +1,11 @@
-# maimaidx-prober-updater-android
+# maimaidx-prober-updater-android-v2
 
-基于项目 [BaoLianDeng](https://github.com/madeye/BaoLianDeng) 改编的纯本地更新舞萌数据 Android app
+复刻自 [bakapiano/maimaidx-prober-updater-android](https://github.com/bakapiano/maimaidx-prober-updater-android) 本地更新舞萌数据 Android app
 
-下载链接: [https://maimaidx-prober-updater-android.bakapiano.com/](https://maimaidx-prober-updater-android.bakapiano.com/)
+### 更新内容：
 
-欢迎加入 dev 开发群来共同维护这个项目~
-
-QQ 群号: 850526534
+1. 适配安卓12~16API，修补新版系统VPN唤起问题
+2. 优化UI界面，优化代码效率
+3. 添加自适应黑暗模式，适配导航栏状态栏沉浸
+4. 适配多语言，支持简体中文、繁体中文（TW）、繁体中文（HK）、英文、日文。自适应系统语言设定
+5. 修改了图标
