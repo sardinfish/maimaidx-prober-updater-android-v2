@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/menu_item_switch"
+          android:title="@string/menu_item_switch"
+          app:showAsAction="always"
+          app:actionViewClass="androidx.appcompat.widget.SwitchCompat"/>
+    <item
+        android:id="@+id/menu_item_check_version"
+        android:title="@string/menu_item_check_version" />
+    <item
+        android:id="@+id/menu_item_proxy"
+        android:title="@string/menu_item_proxy" />
+    <item
+        android:id="@+id/menu_item_about"
+        android:title="@string/menu_item_about" />
+
+</menu>

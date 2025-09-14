@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">舞萌DX資料更新器 V2</string>
+    <string name="menu_item_switch">代理</string>
+    <string name="menu_item_about">關於</string>
+    <string name="menu_item_proxy">代理設定</string>
+    <string name="menu_item_check_version">使用指南</string>
+    <string name="config_url">設定的URL</string>
+    <string name="config_not_set_value">未設定</string>
+    <string name="config_url_scan">掃描QR Code</string>
+    <string name="config_url_manual">手動選擇類型</string>
+    <string name="config_url_scan_hint">掃描您的設定網址的QR Code</string>
+    <string name="btn_ok">確認</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_more">更多&#8230;</string>
+    <string name="btn_dlt">恢復預設值</string>
+    <string name="btn_save">儲存帳號資訊</string>
+    <string name="swh_copy_url">複製連結 🔗</string>
+    <string name="swh_auto_wechat">自動開啟微信</string>
+    <string name="vpn_connected_status">VPN已連線</string>
+    <string name="vpn_disconnected_status">VPN已斷線</string>
+    <string name="about_info">V2重新編譯記錄：\n\n1. 适配Android 12~16 API，修補新版系統VPN啟用問題\n\n2. 優化UI介面，優化程式碼效率\n\n3. 加入自動深色模式，適應導航列狀態列沉浸\n\nRecompiled by sardinfish. \n\n----------\n舊版本資訊：\n\n舞萌DX查分器 - Android資料更新器\nby:bakapiano</string>
+    <string name="user_guide">使用指南：\n\n1. 正確填寫水魚帳號，並儲存帳號資訊\n\n2. 開啟右上角開關，自動跳至微信\n 📢若出現VPN連線請求請允許！\n\n3. 在任意聊天視窗貼上，並開啟自動複製的連結，或手動開啟微信舞萌後台頁面\n\n4. 看到提示後，依指示返回應用程式，並等待程式上傳</string>
+    <string name="exit_confirm_info">這將中斷VPN連線，您確定要退出嗎？</string>
+    <string name="err_invalid_url">設定的URL無效</string>
+    <string name="config_url_hint">URL或本機路徑</string>
+    <string name="connected">VPN已連線 ⚡</string>
+    <string name="disconnected">資料更新器 V2 🐠</string>
+    <string name="username">查分器帳號 💌</string>
+    <string name="password">查分器密碼 🔑</string>
+    <string name="chk_basic">綠譜</string>
+    <string name="chk_advanced">黃譜</string>
+    <string name="chk_expert">紅譜</string>
+    <string name="chk_master">紫譜</string>
+    <string name="chk_remaster">白譜</string>
+    <string name="proxy_setting">代理設定</string>
+    <string name="proxy_setting_textView1">登入連結取得位址：</string>
+    <string name="acc_save_success">查分器帳號儲存成功</string>
+    <string name="acc_save_failed">查分器帳號資訊無效</string>
+</resources>

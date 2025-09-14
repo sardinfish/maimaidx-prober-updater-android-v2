@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Maimai DX Data Updater V2</string>
+    <string name="menu_item_switch">Proxy</string>
+    <string name="menu_item_about">About</string>
+    <string name="menu_item_proxy">Proxy Settings</string>
+    <string name="menu_item_check_version">User Guide</string>
+    <string name="proxy_setting">Proxy Settings</string>
+    <string name="proxy_setting_textView1">Login Link Fetch Address:</string>
+    <string name="config_url">Set URL</string>
+    <string name="config_not_set_value">Not Set</string>
+    <string name="config_url_scan">Scan QR Code</string>
+    <string name="config_url_manual">Manual Selection</string>
+    <string name="config_url_scan_hint">Scan the QR code of your configuration URL</string>
+    <string name="btn_ok">OK</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_more">More&#8230;</string>
+    <string name="btn_dlt">Restore Default</string>
+    <string name="btn_save">Save Account Info</string>
+    <string name="swh_copy_url">Copy Link 🔗</string>
+    <string name="swh_auto_wechat">Auto Launch WeChat</string>
+    <string name="vpn_connected_status">VPN Connected</string>
+    <string name="vpn_disconnected_status">VPN Disconnected</string>
+    <string name="about_info">V2 Recompilation Log:\n\n1. Adapted for Android 12~16 API, fixed VPN activation issues on newer systems.\n\n2. Optimized UI, improved code efficiency.\n\n3. Added adaptive dark mode, adapted for immersive status and navigation bars.\n\nRecompiled by sardinfish. \n\n----------\nOld Version Info:\n\nMaimai DX Score Viewer - Android Data Updater\nby: bakapiano</string>
+    <string name="user_guide">User Guide:\n\n1. Correctly enter your account info and save it.\n\n2. Turn on the switch in the upper right corner to automatically jump to WeChat.\n 📢 Please allow the VPN connection request if prompted!\n\n3. Paste the automatically copied link in any chat window, or manually open the Maimai backend page in WeChat.\n\n4. After seeing the prompt, return to the app as instructed and wait for the data upload to complete.</string>
+    <string name="exit_confirm_info">This will disconnect the VPN. Are you sure you want to exit?</string>
+    <string name="err_invalid_url">The configured URL is invalid</string>
+    <string name="config_url_hint">URL or Local Path</string>
+    <string name="connected">VPN Connected ⚡</string>
+    <string name="disconnected">Data Updater V2 🐠</string>
+    <string name="username">Viewer Account 💌</string>
+    <string name="password">Viewer Password 🔑</string>
+    <string name="chk_basic">Basic</string>
+    <string name="chk_advanced">Advanced</string>
+    <string name="chk_expert">Expert</string>
+    <string name="chk_master">Master</string>
+    <string name="chk_remaster">Re:Mas</string>
+    <string name="acc_save_success">Viewer account saved successfully</string>
+    <string name="acc_save_failed">Viewer account information is invalid</string>
+</resources>

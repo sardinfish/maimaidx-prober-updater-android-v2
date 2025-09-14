@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">舞萌DX数据更新器 V2</string>
+    <string name="menu_item_switch">Proxy</string>
+    <string name="menu_item_about">关于</string>
+    <string name="menu_item_proxy">代理设置</string>
+    <string name="menu_item_check_version">使用指南</string>
+    <string name="config_url">设定的URL</string>
+    <string name="config_not_set_value">未设定</string>
+    <string name="config_url_scan">扫描QR code</string>
+    <string name="config_url_manual">手动选择类型</string>
+    <string name="config_url_scan_hint">扫描您的配置网址的二维码</string>
+    <string name="btn_ok">确认</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_more">更多&#8230;</string>
+    <string name="btn_dlt">恢复默认</string>
+    <string name="btn_save">保存账号信息</string>
+    <string name="swh_copy_url">复制链接 🔗</string>
+    <string name="swh_auto_wechat">自动唤醒微信</string>
+    <string name="vpn_connected_status">VPN已连接</string>
+    <string name="vpn_disconnected_status">VPN已断开连接</string>
+    <string name="about_info">V2重编译日志：\n\n1. 适配安卓12~16API，修补新版系统VPN唤起问题\n\n2.优化UI界面，优化代码效率\n\n3.添加自适应黑暗模式，适配导航栏状态栏沉浸\n\nRecompiled by sardinfish. \n\n----------\n旧版本信息：\n\n舞萌DX查分器 - 安卓数据更新器\nby:bakapiano</string>
+    <string name="user_guide">使用指南：\n\n1. 正确填写水鱼账号，并保存账号信息\n\n2. 打开右上角开关，自动转跳到微信\n 📢若弹出VPN连接请求请同意！\n\n3.在任意聊天界面粘贴，并打开自动复制的链接，或手动打开微信舞萌后台页面\n\n4.看到弹出提示，按操作返回程序，并等待程序上传</string>
+    <string name="exit_confirm_info">这将断开VPN连接，您确定要退出吗？</string>
+    <string name="err_invalid_url">配置的URL无效</string>
+    <string name="config_url_hint">URL或本地路径</string>
+    <string name="connected">VPN已连接 ⚡</string>
+    <!--    <string name="disconnected">已断开连接</string>-->
+    <string name="disconnected">数据更新器 V2 🐠</string>
+    <string name="username">查分器账号 💌</string>
+    <string name="password">查分器密码 🔑</string>
+    <string name="chk_basic">绿谱</string>
+    <string name="chk_advanced">黄谱</string>
+    <string name="chk_expert">红谱</string>
+    <string name="chk_master">紫谱</string>
+    <string name="chk_remaster">白谱</string>
+    <string name="proxy_setting">代理设置</string>
+    <string name="proxy_setting_textView1">登录链接获取地址：</string>
+    <string name="acc_save_success">查分器账户保存成功</string>
+    <string name="acc_save_failed">查分账户信息无效</string>
+</resources>

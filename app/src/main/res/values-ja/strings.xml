@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">舞萌DXデータアップデータ V2</string>
+    <string name="menu_item_switch">プロキシ</string>
+    <string name="menu_item_about">關於</string>
+    <string name="menu_item_proxy">プロキシ設定</string>
+    <string name="menu_item_check_version">使い方</string>
+    <string name="config_url">設定URL</string>
+    <string name="config_not_set_value">未設定</string>
+    <string name="config_url_scan">QRコードをスキャン</string>
+    <string name="config_url_manual">タイプを手動選択</string>
+    <string name="config_url_scan_hint">設定URLのQRコードをスキャンしてください</string>
+    <string name="btn_ok">確認</string>
+    <string name="btn_cancel">キャンセル</string>
+    <string name="btn_more">詳細&#8230;</string>
+    <string name="btn_dlt">デフォルトに戻す</string>
+    <string name="btn_save">アカウント情報を保存</string>
+    <string name="swh_copy_url">リンクをコピー 🔗</string>
+    <string name="swh_auto_wechat">WeChatを自動起動</string>
+    <string name="vpn_connected_status">VPN接続済み</string>
+    <string name="vpn_disconnected_status">VPN未接続</string>
+    <string name="about_info">V2再コンパイルログ:\n\n1. Android 12~16 APIに対応、新しいシステムでのVPN起動問題を修正\n\n2. UIを最適化、コード効率を改善\n\n3. 自動ダークモードを追加、ナビゲーションバーとステータスバーの没入表示に対応\n\nRecompiled by sardinfish. \n\n----------\n旧バージョン情報:\n\n舞萌DXスコアビューア - Androidデータアップデータ\nby:bakapiano</string>
+    <string name="user_guide">使い方:\n\n1. アカウント情報を正しく入力し、保存してください\n\n2. 右上のスイッチをオンにすると、自動的にWeChatに移動します\n 📢VPN接続リクエストが表示されたら許可してください！\n\n3. 任意のチャット画面で自動コピーされたリンクを貼り付けて開くか、手動でWeChatの舞萌バックエンドページを開きます\n\n4. プロンプトが表示されたら、指示に従ってアプリに戻り、データアップロードが完了するのを待ちます</string>
+    <string name="exit_confirm_info">VPN接続が切断されます。終了しますか？</string>
+    <string name="err_invalid_url">設定されたURLが無効です</string>
+    <string name="config_url_hint">URLまたはローカルパス</string>
+    <string name="connected">VPN接続済み ⚡</string>
+    <string name="disconnected">データアップデータ V2 🐠</string>
+    <string name="username">ビューアアカウント 💌</string>
+    <string name="password">ビューアパスワード 🔑</string>
+    <string name="chk_basic">Basic</string>
+    <string name="chk_advanced">Advanced</string>
+    <string name="chk_expert">Expert</string>
+    <string name="chk_master">Master</string>
+    <string name="chk_remaster">Re:Mas</string>
+    <string name="proxy_setting">プロキシ設定</string>
+    <string name="proxy_setting_textView1">ログインリンク取得アドレス：</string>
+    <string name="acc_save_success">ビューアアカウントの保存に成功しました</string>
+    <string name="acc_save_failed">ビューアアカウント情報が無効です</string>
+</resources>

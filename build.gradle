@@ -1,0 +1,39 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    ext {
+        compile_version = 34
+        min_version = 28
+        target_version = 34
+        // 更新支持库版本为 AndroidX
+        androidx_core_version = '1.12.0'
+        androidx_appcompat_version = '1.7.0'
+        androidx_material_version = '1.11.0'
+        androidx_constraint_layout_version = '2.1.4'
+        androidx_cardview_version = '1.0.0'
+        junit_version = '4.13.2'
+        androidx_test_ext_junit = '1.1.5'
+        androidx_test_espresso = '3.5.1'
+        kotlin_version = '1.9.0'
+        okhttp_version = '4.12.0'
+    }
+    repositories {
+        google()
+        mavenCentral()  // 替换 jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.11.2'  // 使用稳定版本
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()  // 替换 jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

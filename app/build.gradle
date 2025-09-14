@@ -1,0 +1,136 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'  // 添加 Kotlin 插件
+}
+
+android {
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'armeabi-v7a', 'arm64-v8a', 'x86'
+            universalApk true
+        }
+    }
+    signingConfigs {
+        updater {
+        }
+    }
+    compileSdk compile_version
+    namespace 'com.bakapiano.maimai.updater'
+
+    buildFeatures {
+        buildConfig true
+        viewBinding true  // 如果需要视图绑定
+    }
+
+    defaultConfig {
+        applicationId 'com.bakapiano.maimai.updater'
+        minSdkVersion min_version
+        targetSdkVersion target_version
+        versionCode 2
+        versionName '2.2.1'
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // 签名配置保持不变
+    def signingFile = rootProject.file('key.properties')
+    String sha1 = null
+    if (signingFile.exists()) {
+        def input = signingFile.newInputStream()
+        def p = new Properties()
+        p.load(input)
+        input.close()
+        def jks = rootProject.file(p['storeFile'])
+        if (jks.exists()) {
+            signingConfigs {
+                config {
+                    keyAlias p['keyAlias']
+                    keyPassword p['keyPassword']
+                    storeFile jks
+                    storePassword p['storePassword']
+                    v1SigningEnabled true
+                    v2SigningEnabled true
+                }
+            }
+            buildTypes {
+                debug.signingConfig signingConfigs.config
+                release.signingConfig signingConfigs.config
+            }
+            def signingConfig = signingConfigs.config
+            if (signingConfig != null) {
+                def keyStore = java.security.KeyStore.getInstance(
+                        signingConfig.getStoreType() ?: java.security.KeyStore.getDefaultType())
+                FileInputStream fis = new FileInputStream(signingConfig.getStoreFile())
+                keyStore.load(fis, signingConfig.getStorePassword().toCharArray())
+                fis.close()
+                char[] keyPassword = signingConfig.getKeyPassword().toCharArray()
+                def entry = keyStore.getEntry(
+                        signingConfig.getKeyAlias(),
+                        new java.security.KeyStore.PasswordProtection(keyPassword))
+                if (entry != null) {
+                    def digest = java.security.MessageDigest.getInstance("SHA-1")
+                    sha1 = digest.digest(entry.getCertificate().encoded).encodeHex().toString()
+                }
+            }
+        }
+    }
+    if (sha1 == null) {
+        defaultConfig.buildConfigField('String', "SIGNATURE", 'null')
+    } else {
+        defaultConfig.buildConfigField('String', "SIGNATURE", '"' + sha1 + '"')
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+
+    kotlinOptions {
+        jvmTarget = '17'
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    // AndroidX 核心库
+    implementation "androidx.core:core-ktx:$androidx_core_version"
+    implementation "androidx.appcompat:appcompat:$androidx_appcompat_version"
+    implementation "com.google.android.material:material:$androidx_material_version"
+    implementation "androidx.constraintlayout:constraintlayout:$androidx_constraint_layout_version"
+    implementation "androidx.cardview:cardview:$androidx_cardview_version"
+    implementation 'androidx.activity:activity:1.8.0'
+
+    // 网络库
+    implementation "com.squareup.okhttp3:okhttp:$okhttp_version"
+
+    // 工具库
+    implementation 'net.ripe.commons:commons-ip-math:1.22'
+    implementation 'org.nanohttpd:nanohttpd:2.3.1'  // 更新版本
+
+    // 测试库
+    testImplementation "junit:junit:$junit_version"
+    androidTestImplementation "androidx.test.ext:junit:$androidx_test_ext_junit"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$androidx_test_espresso"
+
+    // Kotlin 标准库
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+}
